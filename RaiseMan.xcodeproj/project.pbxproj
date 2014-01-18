@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E39D5DE188A232C00A08AD9 /* txt.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2E39D5DD188A232C00A08AD9 /* txt.icns */; };
 		D6308CDF18889C920023E408 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6308CDE18889C920023E408 /* Cocoa.framework */; };
 		D6308CE918889C920023E408 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6308CE718889C920023E408 /* InfoPlist.strings */; };
 		D6308CEB18889C920023E408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6308CEA18889C920023E408 /* main.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E39D5DD188A232C00A08AD9 /* txt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = txt.icns; sourceTree = "<group>"; };
 		D6308CDB18889C920023E408 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6308CDE18889C920023E408 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D6308CE118889C920023E408 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -101,6 +103,7 @@
 		D6308CE518889C920023E408 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2E39D5DD188A232C00A08AD9 /* txt.icns */,
 				D6308CE618889C920023E408 /* RaiseMan-Info.plist */,
 				D6308CE718889C920023E408 /* InfoPlist.strings */,
 				D6308CEA18889C920023E408 /* main.m */,
@@ -162,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E39D5DE188A232C00A08AD9 /* txt.icns in Resources */,
 				D6308CE918889C920023E408 /* InfoPlist.strings in Resources */,
 				D6308CEF18889C920023E408 /* Credits.rtf in Resources */,
 				D6308CF518889C920023E408 /* RMDocument.xib in Resources */,
@@ -322,6 +326,7 @@
 				D6308CFD18889C920023E408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
