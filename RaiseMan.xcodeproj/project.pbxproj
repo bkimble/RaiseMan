@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E39D5DE188A232C00A08AD9 /* txt.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2E39D5DD188A232C00A08AD9 /* txt.icns */; };
+		2E39D627188E1AA100A08AD9 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E39D626188E1AA100A08AD9 /* PreferenceController.m */; };
+		2E39D62A188E1B9A00A08AD9 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E39D629188E1B9A00A08AD9 /* AppController.m */; };
+		2E39D62C188E1CE800A08AD9 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E39D62B188E1CE800A08AD9 /* Preferences.xib */; };
 		D6308CDF18889C920023E408 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6308CDE18889C920023E408 /* Cocoa.framework */; };
 		D6308CE918889C920023E408 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6308CE718889C920023E408 /* InfoPlist.strings */; };
 		D6308CEB18889C920023E408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6308CEA18889C920023E408 /* main.m */; };
@@ -20,6 +23,11 @@
 
 /* Begin PBXFileReference section */
 		2E39D5DD188A232C00A08AD9 /* txt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = txt.icns; sourceTree = "<group>"; };
+		2E39D625188E1AA100A08AD9 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferenceController.h; path = ../PreferenceController.h; sourceTree = "<group>"; };
+		2E39D626188E1AA100A08AD9 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferenceController.m; path = ../PreferenceController.m; sourceTree = "<group>"; };
+		2E39D628188E1B9A00A08AD9 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		2E39D629188E1B9A00A08AD9 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2E39D62B188E1CE800A08AD9 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		D6308CDB18889C920023E408 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6308CDE18889C920023E408 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D6308CE118889C920023E408 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -53,6 +61,7 @@
 		D6308CD218889C920023E408 = {
 			isa = PBXGroup;
 			children = (
+				2E39D62B188E1CE800A08AD9 /* Preferences.xib */,
 				D6308CE418889C920023E408 /* RaiseMan */,
 				D6308CDD18889C920023E408 /* Frameworks */,
 				D6308CDC18889C920023E408 /* Products */,
@@ -89,6 +98,10 @@
 		D6308CE418889C920023E408 /* RaiseMan */ = {
 			isa = PBXGroup;
 			children = (
+				2E39D625188E1AA100A08AD9 /* PreferenceController.h */,
+				2E39D628188E1B9A00A08AD9 /* AppController.h */,
+				2E39D629188E1B9A00A08AD9 /* AppController.m */,
+				2E39D626188E1AA100A08AD9 /* PreferenceController.m */,
 				D6308CF018889C920023E408 /* RMDocument.h */,
 				D6308CF118889C920023E408 /* RMDocument.m */,
 				D6308CFE18889DC70023E408 /* Person.h */,
@@ -169,6 +182,7 @@
 				D6308CE918889C920023E408 /* InfoPlist.strings in Resources */,
 				D6308CEF18889C920023E408 /* Credits.rtf in Resources */,
 				D6308CF518889C920023E408 /* RMDocument.xib in Resources */,
+				2E39D62C188E1CE800A08AD9 /* Preferences.xib in Resources */,
 				D6308CF818889C920023E408 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,8 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E39D627188E1AA100A08AD9 /* PreferenceController.m in Sources */,
 				D6308CEB18889C920023E408 /* main.m in Sources */,
 				D6308CF218889C920023E408 /* RMDocument.m in Sources */,
+				2E39D62A188E1B9A00A08AD9 /* AppController.m in Sources */,
 				D6308D0018889DC70023E408 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
