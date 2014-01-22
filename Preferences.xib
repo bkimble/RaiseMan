@@ -38,6 +38,9 @@
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="changeNewEmptyDoc:" target="-2" id="uMi-Rd-0JX"/>
+                        </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-yd-fnj">
                         <rect key="frame" x="83" y="64" width="156" height="17"/>

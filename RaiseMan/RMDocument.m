@@ -8,6 +8,8 @@
 
 #import "RMDocument.h"
 #import "Person.h"
+#import "PreferenceController.h"
+
 
 @implementation RMDocument
 
@@ -84,6 +86,7 @@ static void *RMDocumentKVOContext;
 {
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
+    [tableView setBackgroundColor:[PreferenceController preferenceTableBgColor]];
 }
 
 + (BOOL)autosavesInPlace
