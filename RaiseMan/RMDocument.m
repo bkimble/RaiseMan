@@ -32,8 +32,19 @@ static void *RMDocumentKVOContext;
     if (self) {
         // Add your subclass-specific initialization here.
         employees = [[NSMutableArray alloc] init];
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(handleColorChange:) name:BNRColorChangedNotification object:nil];
     }
     return self;
+}
+
+- (void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)handleColorChange:(NSNotification *)note {
+    NSColor *color = [[note userInfo] objectForKey:@"color"];
+    [tableView setBackgroundColor:color];
 }
 
 - (void)insertObject:(Person *)p inEmployeesAtIndex:(NSUInteger)index {

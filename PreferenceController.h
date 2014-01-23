@@ -11,6 +11,8 @@
 extern NSString * const BNRTableBgColorKey;
 extern NSString * const BNREmptyDocKey;
 
+extern NSString * const BNRColorChangedNotification;
+
 @interface PreferenceController : NSWindowController {
     IBOutlet NSColorWell *colorWell;
     IBOutlet NSButton *checkbox;

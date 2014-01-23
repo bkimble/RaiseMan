@@ -11,16 +11,22 @@
 
 @implementation AppController
 
-+ (void) initialize {
++ (void) setDefaultPreferenceValues {
+    NSLog(@"Seetting defaulits");
     NSMutableDictionary *defaultValues = [NSMutableDictionary dictionary];
     NSData *colorAsData = [NSKeyedArchiver archivedDataWithRootObject:[NSColor yellowColor]];
     
     // put default values in dictionary
     [defaultValues setObject:colorAsData forKey:BNRTableBgColorKey];
     [defaultValues setObject:[NSNumber numberWithBool:YES] forKey:BNREmptyDocKey];
-
+    
     // register the dictionary as the defaults
     [[NSUserDefaults standardUserDefaults] registerDefaults:defaultValues];
+    
+}
+
++ (void) initialize {
+    [self setDefaultPreferenceValues];
     NSLog(@"registered defaults");
 }
 

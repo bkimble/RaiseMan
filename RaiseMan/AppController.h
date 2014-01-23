@@ -15,5 +15,6 @@
 }
 
 - (IBAction)showPreferencePanel:(id)sender;
++ (void) setDefaultPreferenceValues;
 
 @end

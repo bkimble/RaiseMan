@@ -7,9 +7,12 @@
 //
 
 #import "PreferenceController.h"
+#import "AppController.h"
+
 
 NSString * const BNRTableBgColorKey = @"BNRTableBackgroundKey";
 NSString * const BNREmptyDocKey = @"BNREmptyDocumentFlag";
+NSString * const BNRColorChangedNotification = @"BNRColorChanged";
 
 @implementation PreferenceController
 
@@ -18,17 +21,30 @@ NSString * const BNREmptyDocKey = @"BNREmptyDocumentFlag";
     return self;
 }
 
+- (void) renderFormElements {
+    [colorWell setColor:[PreferenceController preferenceTableBgColor]];
+    [checkbox setState:[PreferenceController preferenceEmptyDoc]];
+}
+
+- (IBAction)resetToDefault:(id)sender {
+    [PreferenceController setPreferenceTableBgColor:[NSColor yellowColor]];
+    [PreferenceController setPreferenceEmptyDoc:YES];
+    [self renderFormElements];
+    NSLog(@"resetting");
+}
 
 - (void)windowDidLoad{
     [super windowDidLoad];
-    NSLog(@"pref windo wload");
-    [colorWell setColor:[PreferenceController preferenceTableBgColor]];
-    [checkbox setState:[PreferenceController preferenceEmptyDoc]];
+    [self renderFormElements];
 }
 
 - (IBAction)changeBackgroundColor:(id)sender {
     NSColor *color = [colorWell color];
     [PreferenceController setPreferenceTableBgColor:color];
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    NSDictionary *d = [NSDictionary dictionaryWithObject:color forKey:@"color"];
+//    NSLog(@"sending notifications");
+    [nc postNotificationName:BNRColorChangedNotification object:self userInfo:d];
 }
 
 
